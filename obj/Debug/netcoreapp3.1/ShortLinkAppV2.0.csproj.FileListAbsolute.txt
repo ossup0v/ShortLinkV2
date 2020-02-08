@@ -1,0 +1,6 @@
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\staticwebassets\ShortLinkAppV2.0.StaticWebAssets.Manifest.cache
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\staticwebassets\ShortLinkAppV2.0.StaticWebAssets.xml
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\ShortLinkAppV2.0.MvcApplicationPartsAssemblyInfo.cs
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\ShortLinkAppV2.0.MvcApplicationPartsAssemblyInfo.cache
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\ShortLinkAppV2.0.AssemblyInfoInputs.cache
+E:\GitRepos\ShortLinkAppV2.0\ShortLinkAppV2.0\ShortLinkAppV2.0\obj\Debug\netcoreapp3.1\ShortLinkAppV2.0.AssemblyInfo.cs
