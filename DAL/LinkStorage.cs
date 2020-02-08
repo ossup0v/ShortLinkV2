@@ -9,7 +9,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ShortLinkAppV2._0.BusinessLogic
+namespace ShortLinkAppV2._0.DAL
 {
     public class LinkStorage : ILinkStorage
     {
