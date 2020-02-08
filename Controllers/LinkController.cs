@@ -38,5 +38,13 @@ namespace ShortLinkAppV2._0.Controllers
             var fullLinks = _linkService.ReadUriAsync().Result;
             return new JsonResult(fullLinks);
         }
+
+
+        [HttpGet("~/q")]
+        public IActionResult Redirect(string token)
+        {
+            var uri = _linkService.ReadUriAsync(token).Result;
+            return new RedirectResult(uri.FullURI);
+        }
     }
 }
