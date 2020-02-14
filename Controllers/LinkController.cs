@@ -19,31 +19,31 @@ namespace ShortLinkAppV2._0.Controllers
         }
 
         [HttpPost("CreateShortLink")]
-        public JsonResult CreateShortLink([FromBody]string fullLink)
+        public async Task<JsonResult> CreateShortLink([FromBody]string fullLink)
         {
-            var shortLink = _linkService.CreateShortLinkAsync(new URI { FullURI = fullLink, Created = DateTime.Now }).Result;
+            var shortLink = await _linkService.CreateShortLinkAsync(new URI { FullURI = fullLink, Created = DateTime.Now });
             return new JsonResult(shortLink);
         }
 
         [HttpPost("FindFullLink")]
-        public JsonResult FindFullLink([FromBody]string token)
+        public async Task<JsonResult> FindFullLink([FromBody]string token)
         {
-            var fullLink = _linkService.ReadUriAsync(token).Result;
+            var fullLink = await _linkService.ReadUriAsync(token);
             return new JsonResult(fullLink);
         }
 
         [HttpGet("FindAllLinks")]
-        public JsonResult FindAllLinks()
+        public async Task<JsonResult> FindAllLinksA()
         {
-            var fullLinks = _linkService.ReadUriAsync().Result;
+            var fullLinks = await _linkService.ReadUriAsync();
             return new JsonResult(fullLinks);
         }
 
 
         [HttpGet("~/q")]
-        public IActionResult Redirect(string token)
+        public async Task<IActionResult> Redirect(string token)
         {
-            var uri = _linkService.ReadUriAsync(token).Result;
+            var uri = await _linkService.ReadUriAsync(token);
             return new RedirectResult(uri.FullURI);
         }
     }
